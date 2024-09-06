@@ -1,26 +1,22 @@
 // src/components/RecipeList.jsx
 import React from "react";
-import { useRecipeStore } from "../stores/recipeStore"; // Import the store
+import { useRecipeStore } from "./recipeStore";
 
 const RecipeList = () => {
-  const recipes = useRecipeStore((state) => state.recipes); // Fetch recipes from the store
+  const filteredRecipes = useRecipeStore((state) => state.filteredRecipes);
 
-  if (!recipes || recipes.length === 0) {
-    return <p>No recipes added yet!</p>; // Display message if no recipes are available
+  if (!filteredRecipes || filteredRecipes.length === 0) {
+    return <p>No recipes found!</p>;
   }
 
   return (
     <div>
-      {recipes.map(
-        (
-          recipe // Use map to iterate over the recipes array
-        ) => (
-          <div key={recipe.id}>
-            <h3>{recipe.title}</h3>
-            <p>{recipe.description}</p>
-          </div>
-        )
-      )}
+      {filteredRecipes.map((recipe) => (
+        <div key={recipe.id}>
+          <h3>{recipe.title}</h3>
+          <p>{recipe.description}</p>
+        </div>
+      ))}
     </div>
   );
 };
