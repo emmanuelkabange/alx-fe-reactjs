@@ -1,18 +1,15 @@
-import { useRecipeStore } from "../stores/recipeStore";
+// src/App.jsx
+import RecipeList from "./components/RecipeList";
+import AddRecipeForm from "./components/AddRecipeForm";
 
-const RecipeList = () => {
-  const recipes = useRecipeStore((state) => state.recipes);
-
+function App() {
   return (
     <div>
-      {recipes.map((recipe) => (
-        <div key={recipe.id}>
-          <h3>{recipe.title}</h3>
-          <p>{recipe.description}</p>
-        </div>
-      ))}
+      <h1>Recipe Sharing Application</h1>
+      <AddRecipeForm /> {/* Form to add recipes */}
+      <RecipeList /> {/* Display the list of recipes */}
     </div>
   );
-};
+}
 
-export default RecipeList;
+export default App;
