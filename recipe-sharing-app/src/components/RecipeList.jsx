@@ -1,15 +1,28 @@
-// src/App.jsx
-import RecipeList from "./components/RecipeList";
-import AddRecipeForm from "./components/AddRecipeForm";
+// src/components/RecipeList.jsx
+import React from "react";
+import { useRecipeStore } from "../stores/recipeStore"; // Import the store
 
-function App() {
+const RecipeList = () => {
+  const recipes = useRecipeStore((state) => state.recipes); // Fetch recipes from the store
+
+  if (!recipes || recipes.length === 0) {
+    return <p>No recipes added yet!</p>; // Display message if no recipes are available
+  }
+
   return (
     <div>
-      <h1>Recipe Sharing Application</h1>
-      <AddRecipeForm /> {/* Form to add recipes */}
-      <RecipeList /> {/* Display the list of recipes */}
+      {recipes.map(
+        (
+          recipe // Use map to iterate over the recipes array
+        ) => (
+          <div key={recipe.id}>
+            <h3>{recipe.title}</h3>
+            <p>{recipe.description}</p>
+          </div>
+        )
+      )}
     </div>
   );
-}
+};
 
-export default App;
+export default RecipeList;
