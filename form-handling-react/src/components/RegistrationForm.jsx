@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 
 const RegistrationForm = () => {
-  // Set up the form state using useState for each field
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -11,7 +10,6 @@ const RegistrationForm = () => {
 
   const [error, setError] = useState("");
 
-  // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -20,20 +18,16 @@ const RegistrationForm = () => {
     });
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Basic validation
     if (!formData.username || !formData.email || !formData.password) {
       setError("All fields are required.");
       return;
     }
 
-    // Submit form data to the mock API (replace this with actual API call)
     console.log("Form submitted:", formData);
 
-    // Reset form state after submission
     setFormData({
       username: "",
       email: "",

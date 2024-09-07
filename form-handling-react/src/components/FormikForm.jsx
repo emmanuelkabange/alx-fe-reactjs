@@ -25,10 +25,7 @@ const FormikForm = () => {
         initialValues={{ username: "", email: "", password: "" }}
         validationSchema={validationSchema}
         onSubmit={(values, { resetForm }) => {
-          // Simulate API call
           console.log("Form Submitted", values);
-
-          // Reset form
           resetForm();
         }}
       >
