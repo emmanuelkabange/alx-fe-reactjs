@@ -1,4 +1,10 @@
-import Login from "./components/Login";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Profile from "./components/Profile";
+import NotFound from "./components/NotFound";
+import BlogPost from "./components/BlogPost";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   return (
@@ -13,10 +19,11 @@ function App() {
             </ProtectedRoute>
           }
         />
-        <Route path="blog/:id" element={<BlogPost />} />
-        <Route path="login" element={<Login />} />
+        <Route path="/blog/:id" element={<BlogPost />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
 }
+
+export default App;
