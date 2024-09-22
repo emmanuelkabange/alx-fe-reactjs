@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
-    "image": "https://example.com/images/spaghetti-carbonara.jpg",
+    "image": "src/assets/images/1.jpg",
     "ingredients": [
       "200g spaghetti",
       "100g pancetta",
@@ -18,7 +18,7 @@
     "id": 2,
     "title": "Chicken Curry",
     "summary": "A flavorful dish made with tender chicken and a blend of spices.",
-    "image": "https://example.com/images/chicken-curry.jpg",
+    "image": "src/assets/images/2.jpg",
     "ingredients": [
       "500g chicken breast, diced",
       "2 onions, chopped",
@@ -34,7 +34,7 @@
     "id": 3,
     "title": "Vegetable Stir Fry",
     "summary": "A quick and healthy dish packed with colorful vegetables.",
-    "image": "https://example.com/images/vegetable-stir-fry.jpg",
+    "image": "src/assets/images/3.jpg",
     "ingredients": [
       "2 cups mixed vegetables (bell peppers, broccoli, carrots)",
       "2 tbsp soy sauce",
@@ -49,7 +49,7 @@
     "id": 4,
     "title": "Beef Tacos",
     "summary": "Delicious tacos filled with seasoned beef and fresh toppings.",
-    "image": "https://example.com/images/beef-tacos.jpg",
+    "image": "src/assets/images/4.jpg",
     "ingredients": [
       "500g ground beef",
       "1 packet taco seasoning",
@@ -65,7 +65,7 @@
     "id": 5,
     "title": "Caprese Salad",
     "summary": "A fresh salad with tomatoes, mozzarella, and basil.",
-    "image": "https://example.com/images/caprese-salad.jpg",
+    "image": "src/assets/images/5.jpg",
     "ingredients": [
       "2 large tomatoes, sliced",
       "200g mozzarella cheese, sliced",
