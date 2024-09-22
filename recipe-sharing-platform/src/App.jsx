@@ -5,8 +5,8 @@ import RecipeDetail from "./components/RecipeDetail";
 export default function App() {
   return (
     <Router>
-      <nav classname="bg-gray-800 p-4">
-        <Link to="/" classname="text-white mr-4">
+      <nav className="bg-gray-800 p-4 shadow-md">
+        <Link to="/" className="text-white font-semibold text-lg">
           Home
         </Link>
       </nav>
