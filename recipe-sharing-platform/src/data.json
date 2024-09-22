@@ -3,30 +3,77 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
-    "image": "src/assets/images/1.jpg"
+    "image": "https://example.com/images/spaghetti-carbonara.jpg",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta",
+      "2 large eggs",
+      "50g Parmesan cheese, grated",
+      "Freshly ground black pepper",
+      "Salt"
+    ],
+    "instructions": "1. Cook spaghetti according to package instructions. 2. In a pan, cook pancetta until crispy. 3. Whisk eggs and cheese together in a bowl. 4. Combine hot pasta with pancetta and off-heat mix with egg mixture. 5. Serve immediately with extra cheese and pepper."
   },
   {
     "id": 2,
-    "title": "Chicken Tikka Masala",
-    "summary": "A popular Indian dish consisting of marinated chicken cooked in a spiced tomato sauce.",
-    "image": "src/assets/images/2.jpg"
+    "title": "Chicken Curry",
+    "summary": "A flavorful dish made with tender chicken and a blend of spices.",
+    "image": "https://example.com/images/chicken-curry.jpg",
+    "ingredients": [
+      "500g chicken breast, diced",
+      "2 onions, chopped",
+      "2 cloves garlic, minced",
+      "1 tbsp curry powder",
+      "400ml coconut milk",
+      "Salt and pepper to taste",
+      "Fresh coriander for garnish"
+    ],
+    "instructions": "1. Sauté onions and garlic until soft. 2. Add chicken and curry powder, cooking until chicken is browned. 3. Pour in coconut milk and simmer for 20 minutes. 4. Season with salt and pepper. 5. Serve with rice and garnish with coriander."
   },
   {
     "id": 3,
-    "title": "Beef Tacos",
-    "summary": "Soft or crunchy tortillas filled with seasoned ground beef, lettuce, cheese, and salsa.",
-    "image": "src/assets/images/3.jpg"
+    "title": "Vegetable Stir Fry",
+    "summary": "A quick and healthy dish packed with colorful vegetables.",
+    "image": "https://example.com/images/vegetable-stir-fry.jpg",
+    "ingredients": [
+      "2 cups mixed vegetables (bell peppers, broccoli, carrots)",
+      "2 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "1 tsp ginger, minced",
+      "1 clove garlic, minced",
+      "Cooked rice or noodles for serving"
+    ],
+    "instructions": "1. Heat sesame oil in a pan. 2. Add ginger and garlic, sautéing until fragrant. 3. Add mixed vegetables and stir-fry for 5-7 minutes. 4. Pour in soy sauce and cook for another 2 minutes. 5. Serve over rice or noodles."
   },
   {
     "id": 4,
-    "title": "Vegetable Stir Fry",
-    "summary": "A quick and healthy dish made with a variety of colorful vegetables sautéed in a flavorful sauce.",
-    "image": "src/assets/images/4.jpg"
+    "title": "Beef Tacos",
+    "summary": "Delicious tacos filled with seasoned beef and fresh toppings.",
+    "image": "https://example.com/images/beef-tacos.jpg",
+    "ingredients": [
+      "500g ground beef",
+      "1 packet taco seasoning",
+      "8 taco shells",
+      "1 cup lettuce, shredded",
+      "1 cup tomatoes, diced",
+      "1 cup cheese, shredded",
+      "Sour cream and salsa for serving"
+    ],
+    "instructions": "1. Cook ground beef in a skillet until browned. 2. Add taco seasoning and water, simmer for 5 minutes. 3. Fill taco shells with beef and top with lettuce, tomatoes, and cheese. 4. Serve with sour cream and salsa."
   },
   {
     "id": 5,
-    "title": "Chocolate Chip Cookies",
-    "summary": "Classic cookies filled with gooey chocolate chips and a soft, chewy texture.",
-    "image": "src/assets/images/5.jpg"
+    "title": "Caprese Salad",
+    "summary": "A fresh salad with tomatoes, mozzarella, and basil.",
+    "image": "https://example.com/images/caprese-salad.jpg",
+    "ingredients": [
+      "2 large tomatoes, sliced",
+      "200g mozzarella cheese, sliced",
+      "Fresh basil leaves",
+      "Olive oil",
+      "Balsamic vinegar",
+      "Salt and pepper to taste"
+    ],
+    "instructions": "1. Arrange tomato and mozzarella slices on a plate. 2. Tuck in basil leaves between the slices. 3. Drizzle with olive oil and balsamic vinegar. 4. Season with salt and pepper."
   }
 ]
