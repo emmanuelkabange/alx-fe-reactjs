@@ -1,47 +1,31 @@
-// src/components/HomePage.jsx
 import React, { useState, useEffect } from "react";
+import data from "../data.json"; // Adjust this path as needed
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    const fetchRecipes = async () => {
-      try {
-        const response = await fetch("src/data.json");
-        const data = await response.json();
-        setRecipes(data);
-      } catch (error) {
-        console.error("Error fetching the recipes:", error);
-      }
-    };
-
-    fetchRecipes();
+    setRecipes(data);
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-6 text-center">Recipe List</h1>
+    <div className="container mx-auto py-8">
+      <h1 className="text-3xl font-bold mb-6">Recipe List</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {recipes.length > 0 ? (
-          recipes.map((recipe) => (
-            <div
-              key={recipe.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl"
-            >
+        {recipes.map((recipe) => (
+          <Link key={recipe.id} to={`/recipe/${recipe.id}`}>
+            <div className="recipe-card p-4 bg-white shadow hover:shadow-lg transition-shadow duration-300">
               <img
                 src={recipe.image}
                 alt={recipe.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover rounded"
               />
-              <div className="p-4">
-                <h2 className="text-xl font-semibold">{recipe.title}</h2>
-                <p className="mt-2 text-gray-600">{recipe.summary}</p>
-              </div>
+              <h3 className="mt-4 text-lg font-bold">{recipe.title}</h3>
+              <p className="mt-2 text-gray-600">{recipe.summary}</p>
             </div>
-          ))
-        ) : (
-          <p className="text-center">Loading recipes...</p>
-        )}
+          </Link>
+        ))}
       </div>
     </div>
   );
