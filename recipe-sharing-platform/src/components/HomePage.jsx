@@ -7,7 +7,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        const response = await fetch("/data.json");
+        const response = await fetch("src/data.json");
         const data = await response.json();
         setRecipes(data);
       } catch (error) {
